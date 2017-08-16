@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections>
+ <connection id="MyDevice0" uri="chtcp-2.0://192.168.37.12:10203?target=192.168.37.12:50000"  address_table="file://address.xml" />
+ <connection id="MyDevice1" uri="chtcp-2.0://192.168.37.12:10203?target=192.168.37.12:50001"  address_table="file://address.xml" />
+ <connection id="MyDevice2" uri="chtcp-2.0://192.168.37.12:10203?target=192.168.37.12:50002"  address_table="file://address.xml" />
+ <connection id="MyDevice3" uri="chtcp-2.0://192.168.37.12:10203?target=192.168.37.12:50003"  address_table="file://address.xml" />
+</connections>

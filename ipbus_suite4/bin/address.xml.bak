@@ -1,0 +1,7 @@
+<node id="Top">
+    <node id="GCU">
+	<node id="CTRL_reg" address="0x00" mode="incremental" size="0x02" description="IPBUS_REG" tags="slave0"/>  
+	<node id="CTRL_speed" address="0x08" mode="incremental" size="0x01" description="IPBUS_REG" tags="slave0"/>  
+	<node id="FIFO" address="0x2000" mode="incremental" size="0x1000" description="IPBUS_FIFO" tags="slave6"/>
+    </node>
+</node>

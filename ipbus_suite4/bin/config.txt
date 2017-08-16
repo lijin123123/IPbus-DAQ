@@ -1,0 +1,6 @@
+board_num 0x2
+bufsize 0xa00
+event_size 0xf
+GCU.CTRL_reg 1 0x2
+GCU.CTRL_speed 1 0x0
+

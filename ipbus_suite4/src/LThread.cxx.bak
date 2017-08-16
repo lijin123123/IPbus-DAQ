@@ -1,0 +1,33 @@
+#include "LThread.h"
+#include "gva.h"
+#include <cstdio>
+void LThread::in_cmd(char* cmd)
+{	
+    printf("Please input command(i.e %s):",cmd);
+    scanf("%s",msg);
+    while(strcmp(cmd,msg)!=0)
+    {
+	printf("Please input command(i.e %s):",cmd);
+	scanf("%s",msg);
+    }
+    if(strcmp("stop",cmd)==0)
+    {
+	__sync_fetch_and_add(&stop,1);
+    }
+    done=0;
+    pthread_mutex_lock(&mutex);
+    sem_post(&l_r_sem);
+    while(done==0)
+    {
+	pthread_cond_wait(&cv,&mutex);
+    }
+    pthread_mutex_unlock(&mutex);
+    return;
+}
+void LThread::run()
+{
+    in_cmd("config"); 
+    in_cmd("start");
+    in_cmd("stop");
+    return ;//pthread_exit(NULL);
+}

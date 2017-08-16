@@ -1,0 +1,3 @@
+RUN_MODE   1:ui  0:cmdl
+event_size is single board event size
+

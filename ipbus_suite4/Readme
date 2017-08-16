@@ -1,0 +1,14 @@
+event type:
+header:
+16bits
+805a   
+****  //channel number 
+****  //event size   e.g 0x0010   16*16=256bytes
+****  //l1id                 16bytes
+****  /* 
+****     timestamp
+****
+****  */
+
+tailer:
+8069
