@@ -1,1 +1,0 @@
-# IPbus-DAQ
